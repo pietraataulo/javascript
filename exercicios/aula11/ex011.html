@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Brasileiro ou Estrangeiro?</h1>
+        <p>Quer descobrir sua nacionalidade? <br> Consulte em nosso site!</p>
+        
+    </header>
+    <main>
+        <h1>De qual país você é?</h1>
+        <input type="text" name="pais" id="pais">
+        <input type="button" value="Verificar" onclick="calcular()">
+        <p>Você é...</p><div id="res"></div>
+    </main>
+    <script>
+
+        function calcular() {
+                var p = window.document.getElementById('pais')
+                var res = window.document.getElementById('res')
+               var p2 = (p.value)
+                
+               
+                
+
+                if (p2 == 'Brasil') {
+                    res.innerText = 'Brasileiro!'
+                } else {
+                    res.innerText= 'Estrangeiro!'
+                }
+               
+        }  
+    </script>
+</body>
+</html>
