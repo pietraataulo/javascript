@@ -8,14 +8,19 @@
 </head>
 <body>
     <header>
-         <h1>Tútulo</h1>
+         <h1>Confira seu resultado!</h1>
     </header>
     <section>
           <div>
-             Testando...
+            <label for="notas">Digite suas notas:</label>
+             <input type="number" name="notas" id="notas">
+             <input type="button" value="Adicionar" onclick="adicionar()">
+             <p id="tabela"></p>
+             
+             <p><input type="button" value="Calcular" onclick="calcular()"></p>
           </div>
-          <div>
-            Olá
+          <div id="res">
+           
           </div>
     </section>
     <footer>
