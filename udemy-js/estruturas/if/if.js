@@ -21,3 +21,12 @@ let passaporte = true;
 if((nome == "Matheus" && idade > 30) || passaporte == true) {
     console.log("Liberado!")
 }
+
+// if else
+let velocidade = 100
+
+if (velocidade <= 80) {
+    console.log("Não foi multado")
+} else {
+    console.log("Foi multado")
+}
